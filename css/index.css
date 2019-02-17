@@ -1,0 +1,42 @@
+body {
+  background-color: #252525;
+  color: #f0e7d5;
+}
+
+ /* 
+  *
+  *Nav 
+  *
+  */
+
+.navbar {
+  background-color: #353535;
+}
+.container {
+  margin-top: 50px;
+  border: 1px solid black;
+}
+.nav-link {
+  color: rgb(204, 206, 206);
+}
+.nav-link:hover, .nav-link.active:hover {
+  color: #fff;
+}
+.nav-link.active {
+  color: rgb(255, 166, 0);
+}
+@media (min-width: 768px) {
+  .navbar nav{
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+      margin: auto;
+      text-align: center;
+  }
+}
+
+ /* Footer */
+
+ footer {
+   text-align: center;
+ }
