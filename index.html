@@ -11,47 +11,57 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <span id="intro"></span>
     <div class="container">
       <nav class="navbar navbar-dark fixed-top">
-          <a class="navbar-brand" href="#">Henry Valbuena</a>
+          <a class="navbar-brand">Henry Valbuena</a>
               <ul class="nav">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Intro</a>
+                    <a id="one" class="nav-link active" href="#intro">Intro</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a id="two" class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a id="three" class="nav-link" href="#contact">Contact</a>
                   </li>
-                </ul>
+              </ul>
       </nav>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
-          <div class="inner">
-            <h3 class="masthead-brand">Henry Valbuena</h3>
-          </div>
           <h3 class="cover-heading">Welcome</h3>
           <p>My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
-          <p>
-            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-          </p>
         </header>
+        <span id="projects"></span>
         <hr>
-        <main role="main" class="inner cover">
+        <main>
           <hr>
         <div class="projects">
+            <h4 class="sub-title">Project #1</h4>
             <p>My name is <span class="link">Henry</span>, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
             <p>My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
-            <p>My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
-            <p>My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
-            <p>My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
+            <p class="highlight-box">My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.
+              <br> My name is Henry, <span class="code">Harum</span>  minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.
+            </p>
+            <h4 class="sub-title">Project #2</h4>
+            <p>My name is Henry, <span class="code">Harum</span> minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
+        </div>
+        <span id="contact"></span>
+        <hr>
+        <div class="contact">
+          <h4 class="sub-title">Contact</h4>
+          <p>My name is <span class="link">Henry</span>, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
+          <p>My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.</p>
+          <p class="highlight-box">My name is Henry, Harum minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.
+            <br> My name is Henry, <span class="code">Harum</span>  minima ad quis perferendis. Officia odit illum iste possimus sit. Quas recusandae est optio dolore. Sequi et incidunt fuga. Quas sed saepe voluptate ut aliquam. Doloribus aperiam numquam quidem.
+          </p>
         </div>
         </main>
           <hr>
         <footer>
           <div>
-            <p><a href="https://getbootstrap.com/">@Email</a> <a href="https://twitter.com/mdo">@Phone</a>.</p>
+            <p><a  class="link" href="https://getbootstrap.com/">@Email</a> <a href="https://twitter.com/mdo">@Phone</a></p>
+            <p class="side-note">Maintained by <span class="link">Henry</span></p>
           </div>
         </footer>
     </div>
@@ -61,5 +71,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>
