@@ -9,11 +9,11 @@
         updateLinks(3);
     });
     $(window).scroll(() => {
-        if ($(window).scrollTop() < $('#projects').offset().top)
+        if ($(window).scrollTop() + 50 < $('#projects').offset().top)
             updateLinks(1);
-        if ($(window).scrollTop() > $('#intro').offset().top && $(window).scrollTop() < $('#contact').offset().top)
+        else if ($(window).scrollTop() > $('#intro').offset().top && $(window).scrollTop()  + $("body").height() < $('#contact').offset().top)
             updateLinks(2);
-        if ($(window).scrollTop() <= $('#contact').offset().top && $(window).scrollTop() > $('#projects').offset().top)
+        else if ($(window).scrollTop()  + $("body").height() >= $('#contact').offset().top)
             updateLinks(3);
     });
 
