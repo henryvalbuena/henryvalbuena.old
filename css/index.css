@@ -68,11 +68,19 @@ a.link:hover {
   padding: 10px;
   border-radius: 5px;
 }
-ul.highlight-box {
-  border: none;
-  list-style: square;
-  text-align: center;
+div.highlight-box ul {
+  margin-left: 30px;
+  text-align: justify;
+  list-style-position: inside;
+}
+div.col-sm.highlight-box {
   margin: 0;
+  border: none;
+}
+@media (max-width: 574px) {
+  div.col-sm.highlight-box {
+    padding: 0 10px 0 10px;
+  }
 }
 div.highlight-box {
   margin: 0 10px;
@@ -99,14 +107,6 @@ div.highlight-box {
 }
 .code {
   color: rgb(20, 158, 238);
-}
-.images{
-  margin: auto;
-  width: 800px;
-}
-.webgame-gif {
-  margin: auto;
-  max-width: 600px;
 }
 .maze-image {
   width: 300px;
