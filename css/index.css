@@ -58,9 +58,6 @@ i.smile.icon {
 a.link:hover {
   color: rgb(207, 136, 3);
 }
-.highlight-container {
-  width: inherit;
-}
 .highlight-box {
   color: white;
   border: 1px solid black;
